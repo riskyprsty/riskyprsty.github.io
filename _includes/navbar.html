@@ -1,0 +1,71 @@
+<!-- Desktop Header -->
+<header class="header-desktop">
+  <a class="logo" href="{{ site.url }}">
+    ri@sky<span>_</span>
+  </a>
+  <nav class="nav-desktop">
+    <ul>
+      <li class="nav-item">
+        <a href="/blog">
+          <i class="fa-solid fa-terminal"></i> Blog
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/project">
+          <i class="fa-solid fa-folder-open"></i> Projects
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/about">
+          <i class="fa-solid fa-user"></i> About
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Mobile Header -->
+<header class="header-mobile">
+  <div>
+    <a class="logo" href="{{ site.url }}">
+      ri@sky<span>_</span>
+    </a>
+    <button class="burger" onclick="menuToggle()" aria-label="Menu">
+      <i id="burger-icon" class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Navigation -->
+<nav class="nav-mobile" id="nav-mobile">
+  <div>
+    <div>
+      <a class="logo" href="{{ site.url }}">
+        ri@sky<span>_</span>
+      </a>
+    </div>
+    <button class="burger" onclick="menuToggle()" aria-label="Close menu">
+      <i id="close-icon" class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <ul>
+    <li class="nav-item-mobile">
+      <a href="/blog">
+        <i class="fa-solid fa-terminal"></i> Blog
+      </a>
+    </li>
+    <li class="nav-item-mobile">
+      <a href="/project">
+        <i class="fa-solid fa-folder-open"></i> Projects
+      </a>
+    </li>
+    <li class="nav-item-mobile">
+      <a href="/about">
+        <i class="fa-solid fa-user"></i> About
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Mobile Backdrop -->
+<div id="nav-mobile-backdrop" onclick="menuToggle()"></div>

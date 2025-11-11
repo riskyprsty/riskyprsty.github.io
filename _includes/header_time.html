@@ -1,0 +1,16 @@
+<time>
+  {% if include.type == page %}
+    Posted on {{ include.type.date | date: "%b %-d,
+    %Y" }}
+  {% else %}
+    {{ include.type.date | date: "%b %-d, %Y" }}
+  {% endif %}
+  •
+  {% assign words = include.type.content | number_of_words %}
+  {% if words < 360
+  %}
+    1 min read
+  {% else %}
+    {{ words | divided_by: 180 }} mins read
+  {% endif %}
+</time>

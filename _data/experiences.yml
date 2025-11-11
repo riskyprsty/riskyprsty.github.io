@@ -1,0 +1,41 @@
+- role: "Security Researcher"
+  company: "Independent"
+  location: "Remote"
+  period: "2025 - Present"
+  description: "Conducting security assessments and vulnerability research"
+  responsibilities:
+    - "Conducting penetration testing and vulnerability research on government, ministry, and state-owned (BUMN) websites under responsible disclosure programs."
+    - "Developing security tools and automation scripts to support testing and reporting workflows."
+  type: "current"
+
+- role: "Problem Setter"
+  company: "IONIC PENS"
+  location: "Surabaya, Indonesia"
+  period: "2025"
+  description: "Created and designed CTF challenges for the IONIC PENS Competition"
+  responsibilities:
+    - "Created and designed CTF challenges for the Cybersecurity IoT & Networking Competition (IONIC)"
+    - "Focused on web exploitation challenge categories."
+  type: "current"
+
+- role: "Web Exploitation Executive"
+  company: "TRI Cybersecurity Community (TCC PENS)"
+  location: "Surabaya, Indonesia"
+  period: "2024 - Present"
+  description: "Leading and mentoring members in web security research and Capture The Flag (CTF) development"
+  responsibilities:
+    - "Conducted training sessions and workshops on web exploitation and cybersecurity"
+    - "Developed and reviewed CTF challenges for internal and external cybersecurity competitions"
+    - "Organize community events and knowledge-sharing sessions"
+  type: "current"
+
+- role: "Network Engineer"
+  company: "UPT BLK Singosari"
+  location: "Malang, Indonesia"
+  period: "2021"
+  description: "Leading and mentoring members in web security research and Capture The Flag (CTF) development"
+  responsibilities:
+    - "Conducted training sessions and workshops on web exploitation and cybersecurity fundamentals"
+    - "Developed and reviewed CTF challenges for internal and external cybersecurity competitions"
+    - "Collaborated with other divisions to organize community events and knowledge-sharing sessions"
+  type: "current"

@@ -1,0 +1,248 @@
+.post {
+  position: relative;
+  padding: 15vh 20vw 4rem;
+  height: 100%;
+  & time {
+    display: block;
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 400;
+    color: var(--text-color);
+    opacity: 0.6;
+  }
+  & article {
+    margin-top: 28px;
+    & a:not(.anchorjs-link, .glightbox) {
+      color: var(--main-blue);
+      transition: filter 0.5s ease;
+      &:hover {
+        filter: var(--hover-text-filter);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+    }
+    & ul,
+    ol {
+      margin-top: 12px;
+    }
+    & ul,
+    & ol,
+    & li {
+      margin-left: 1.6rem;
+      font-size: 16px;
+    }
+    & li {
+      padding-left: 6px;
+      line-height: 1.8rem;
+      text-align: justify;
+    }
+    & p {
+      font-size: 16px;
+      margin-top: 12px;
+      text-align: justify;
+      text-justify: inter-word;
+      overflow-wrap: break-word;
+      hyphens: manual;
+    }
+    & h1 {
+      margin-top: 22px;
+      scroll-margin-top: 15vh;
+      font-size: 32px;
+      border-bottom: solid 2px rgb(var(--border-color));
+    }
+    & h2 {
+      scroll-margin-top: 13vh;
+      margin-top: 16px;
+      font-size: 30px;
+    }
+    & h3 {
+      scroll-margin-top: 13vh;
+      margin-top: 16px;
+      font-size: 28px;
+    }
+    & h4 {
+      scroll-margin-top: 13vh;
+      margin-top: 16px;
+      font-size: 26px;
+    }
+    & h5 {
+      scroll-margin-top: 13vh;
+      margin-top: 16px;
+      font-size: 24px;
+    }
+    & h6 {
+      scroll-margin-top: 13vh;
+      margin-top: 16px;
+      font-size: 22px;
+    }
+    & table:not(.rouge-table) {
+      color: var(--text-color);
+      margin-top: 16px;
+      font-family: "Inter";
+      font-size: 16px;
+      border-collapse: collapse;
+      width: 100%;
+      & td,
+      & th,
+      & tr {
+        border: 1px solid rgb(var(--border-color));
+        padding: 12px;
+      }
+    }
+    & .glightbox {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 12px;
+      & > img {
+        transition: transform 0.5s ease;
+        border-radius: 12px;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+.post-title-sec {
+  margin-bottom: 28px;
+  & > h4 {
+    font-family: "Space Grotesk";
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+.toc__list {
+  border: solid 1px rgb(var(--border-color));
+  background-color: var(--sec-bg);
+  border-radius: 12px;
+  line-height: 1.8;
+  width: 60%;
+  padding: 1rem 2rem;
+  font-weight: 400;
+  &::before {
+    content: "Table of Contents";
+    font-family: "Space Grotesk";
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 20px;
+  }
+  & a {
+    font-size: 14px;
+    line-height: 1.8;
+    font-family: "Inter";
+    color: var(--main-blue);
+    transition: all 0.5s ease;
+    &:hover {
+      filter: var(--hover-text-filter);
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-offset: 4px;
+    }
+  }
+}
+.toc__sublist {
+  margin-left: 1.25rem;
+}
+
+//Responsive
+@media only screen and (max-width: 500px) {
+  .post {
+    padding: 12vh 8vw 4rem;
+    & article {
+      & ul,
+      ol {
+        margin-top: 8px;
+      }
+      & ul,
+      & ol,
+      & li {
+        margin-left: 0.5rem;
+        font-size: 14px;
+      }
+      & li {
+        padding-left: 6px;
+        line-height: 1.8;
+      }
+      & p {
+        font-size: 14px;
+        margin-top: 8px;
+      }
+      & h1 {
+        margin-top: 22px;
+        scroll-margin-top: 15vh;
+        font-size: 24px;
+      }
+      & h2 {
+        scroll-margin-top: 13vh;
+        margin-top: 16px;
+        font-size: 22px;
+      }
+      & h3 {
+        scroll-margin-top: 13vh;
+        margin-top: 16px;
+        font-size: 20px;
+      }
+      & h4 {
+        scroll-margin-top: 13vh;
+        margin-top: 16px;
+        font-size: 18px;
+      }
+      & h5 {
+        scroll-margin-top: 13vh;
+        margin-top: 16px;
+        font-size: 16px;
+      }
+      & h6 {
+        scroll-margin-top: 13vh;
+        margin-top: 16px;
+        font-size: 14px;
+      }
+      & table:not(.rouge-table) {
+        font-size: 14px;
+        width: 100%;
+        & td,
+        & th,
+        & tr {
+          border: 1px solid rgb(var(--border-color));
+          padding: 12px;
+        }
+      }
+    }
+  }
+  .post-title-sec {
+    & time {
+      font-size: 12px;
+    }
+    & h1 {
+      font-size: 32px !important;
+    }
+    & h4 {
+      font-size: 14px;
+    }
+  }
+  .toc__list {
+    line-height: 1.8;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: 400;
+    &::before {
+      font-size: 18px;
+    }
+    & a {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .post {
+    padding: 12vh 8vw 4rem;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .post {
+    padding: 12vh 8vw 4rem;
+  }
+}

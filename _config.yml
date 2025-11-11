@@ -1,0 +1,37 @@
+title: riskyprsty portofolio
+email: riskigprasetya00@gmail.com
+description: Riski G. Prasetya Portofolio Website
+baseurl: ""
+url: "https://riskyprsty.github.io"
+github_username: riskyprsty
+
+# Build settings
+include: ["_pages"]
+sass:
+  sass_dir: _sass
+  style: compressed
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+plugins:
+  - rouge
+  - jekyll-feed
+  - jekyll-archives
+  - jekyll-seo-tag
+
+# Jekyll Archives
+jekyll-archives:
+  enabled: ["tags"]
+  layout: archive
+  permalinks:
+    tag: "/tag/:name/"
+
+# Front Matter Default
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/static/pp.jpg

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<section class="post">
+  <header class="post-title-sec">
+    <h1 class="title t-46">{{ page.title }}</h1>
+    {% include header_time.html type=page %}
+    <h4 class="mt-1">{{ page.description }}</h4>
+  </header>
+
+  {% include toc.html html=content class="toc__list" item_class="toc__sublist" %}
+  <article>{{ content }}</article>
+
+  <div class="tags mt-3">
+    {% for tag in page.tags %}
+      <a href="/tag/{{ tag }}">#{{ tag }}</a>
+    {% endfor %}
+  </div>
+</section>

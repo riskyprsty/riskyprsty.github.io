@@ -1,0 +1,25 @@
+{% if include.type == "info" %}
+  <div class="alert alert-info">
+    <div>
+      <i class="fa-solid fa-circle-info"></i>
+      <p>{{ include.type | capitalize }}</p>
+    </div>
+    <p>{{ include.content }}</p>
+  </div>
+{% elsif include.type == "warning" %}
+  <div class="alert alert-warning">
+    <div>
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <p>{{ include.type | capitalize }}</p>
+    </div>
+    <p>{{ include.content }}</p>
+  </div>
+{% elsif include.type == "danger" %}
+  <div class="alert alert-danger">
+    <div>
+      <i class="fa-solid fa-circle-exclamation"></i>
+      <p>{{ include.type | capitalize }}</p>
+    </div>
+    <p>{{ include.content }}</p>
+  </div>
+{% endif %}

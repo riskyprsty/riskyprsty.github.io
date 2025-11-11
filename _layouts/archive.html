@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<section class="blog">
+  <header class="heading border-bottom">
+    <div class="page-title-sec">
+      <h1 class="title">Tag: '{{ page.title }}'</h1>
+    </div>
+    <p>Shows all posts tagged '{{ page.title }}'</p>
+  </header>
+  <div class="post-desktop layout-2">
+    <div class="post-list">
+      {% for post in page.posts %}
+        <div class="post-item">
+          {% include header_time.html type=post %}
+          <h3>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h3>
+          <p>{{ post.description }}</p>
+          <div class="tags">
+            {% for tag in post.tags %}
+              <a href="/tag/{{ tag }}">{{ tag }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="tags-list">
+      <h3>Tags</h3>
+      <div class="tags">
+        {% for tag in site.tags %}
+          {% capture tag_name %} {{ tag | first }} {%
+        endcapture %}
+          <a href="/tag/{{ tag_name | strip }}">{{ tag_name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="post-mobile">
+    <div class="post-list">
+      {% for post in page.posts %}
+        <div class="post-item">
+          {% include header_time.html type=post %}
+          <h3>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h3>
+          <p>{{ post.description | truncatewords: 25 }}</p>
+          <div class="tags">
+            {% for tag in post.tags %}
+              <a href="/tag/{{ tag }}">{{ tag }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

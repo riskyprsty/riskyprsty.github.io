@@ -1,0 +1,42 @@
+{% if page.layout == "post" %}
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+{% endif %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const isPostPage = document.querySelector('article') !== null;
+  
+  if (isPostPage) {
+    if (typeof anchors !== 'undefined') {
+      anchors.add("article h1");
+    }
+
+    const articleImages = document.querySelectorAll("article img");
+    if (articleImages.length !== 0) {
+      articleImages.forEach((el) => {
+        const anchorWrapper = document.createElement("a");
+        anchorWrapper.setAttribute("href", el.currentSrc || el.src);
+        anchorWrapper.setAttribute("class", "glightbox");
+        anchorWrapper.appendChild(el.cloneNode(true));
+        el.parentNode.replaceChild(anchorWrapper, el);
+      });
+    }
+  }
+
+  if (typeof GLightbox !== 'undefined') {
+    const lightbox = GLightbox({
+      selector: '.glightbox, .achievement-lightbox',
+      touchNavigation: true,
+      loop: true,
+      zoomable: true,
+      draggable: true,
+      closeButton: true,
+      skin: 'clean modern',
+      closeOnOutsideClick: true,
+      moreLength: 0
+    });
+  } 
+});
+</script>

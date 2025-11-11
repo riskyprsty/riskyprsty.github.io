@@ -1,0 +1,245 @@
+---
+layout: default
+title: Riski G. Prasetya
+---
+
+<section class="home">
+  <div class="scanline"></div>
+
+  <!--
+  <div class="ascii-art">
+    <pre>
+    ██╗██████╗░░░░░░░░░█████╗░
+    ██║██╔══██╗██████╗██╔══██╗
+    ██║██║░░██║╚═════╝██║░░██║
+    ██║██║░░██║██████╗██║░░██║
+    ██║██████╔╝╚═════╝╚█████╔╝
+    ╚═╝╚═════╝░░░░░░░░░╚════╝░
+
+    ██████╗░░█████╗░░█████╗░████████╗
+    ██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝
+    ██████╔╝██║░░██║██║░░██║░░░██║░░░
+    ██╔══██╗██║░░██║██║░░██║░░░██║░░░
+    ██║░░██║╚█████╔╝╚█████╔╝░░░██║░░░
+    ╚═╝░░╚═╝░╚════╝░░╚════╝░░░░╚═╝░░░
+    </pre>
+  </div>
+   -->
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title glitch">Riski G. Prasetya</h1>
+      <p class="subtitle">
+        whoami
+      </p>
+      <p class="sub-subtitle">
+        Penetration Tester • Fullstack Developer • IoT Engineer
+      </p>
+      <p class="subtitle">
+        cat /home/risky/socials.txt
+      </p>
+      <div class="greeter-icon" style="display: flex; gap: 1.5rem; margin-top: 2rem;">
+        <a href="https://github.com/shinyxn" target="_blank" aria-label="Github">
+          <i class="fa-brands fa-github" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://web.facebook.com/Skyxpy" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/risgprsty/" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://riskyprsty.medium.com/" target="_blank" aria-label="Medium">
+          <i class="fa-brands fa-medium" style="font-size: 1.5rem;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="skills-section">
+    <h2 class="section-title">EXPERTISE</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3>Penetration Testing</h3>
+        <p>Web application security testing, vulnerability assessment, and ethical hacking</p>
+        <div class="skill-level">
+          <div class="level-bar">
+            <div class="level-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h3>Fullstack Development</h3>
+        <p>Building robust web applications with modern frameworks and technologies</p>
+        <div class="skill-level">
+          <div class="level-bar">
+            <div class="level-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fa-solid fa-microchip"></i>
+        </div>
+        <h3>IoT Engineering</h3>
+        <p>Designing and developing Internet of Things solutions and embedded systems</p>
+        <div class="skill-level">
+          <div class="level-bar">
+            <div class="level-fill" style="width: 80%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fa-solid fa-terminal"></i>
+        </div>
+        <h3>System Administration</h3>
+        <p>Linux server management, automation, and infrastructure security</p>
+        <div class="skill-level">
+          <div class="level-bar">
+            <div class="level-fill" style="width: 88%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tools/Arsenal Section - Ultra Compact Horizontal Layout -->
+  <div class="tools-section-compact">
+    <h2 class="section-title-compact">TECHNICAL SKILLS</h2>
+
+    <div class="arsenal-horizontal-grid">
+      {% for category in site.data.arsenal limit:6 %}
+      <div class="arsenal-col" data-category="{{ category.color }}">
+        <div class="category-header-inline">
+          <i class="fa-solid fa-{{ category.icon }}"></i>
+          <h3>{{ category.category }}</h3>
+        </div>
+        <ul class="tools-list-inline">
+          {% for tool in category.tools %}
+          <li title="{{ tool.name }}">
+            <i class="{{ tool.icon }}"></i>
+            <span>{{ tool.name }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Experience Section -->
+  <div class="experience-section">
+    <h2 class="section-title">EXPERIENCE</h2>
+    <div class="timeline">
+      {% for experience in site.data.experiences %}
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <span class="timeline-date">{{ experience.period }}</span>
+          <h3>{{ experience.role }}</h3>
+          <p class="company">
+            {{ experience.company }}
+            {% if experience.location %}
+            <span class="location">
+              <i class="fa-solid fa-location-dot"></i> {{ experience.location }}
+            </span>
+            {% endif %}
+          </p>
+          <ul>
+            {% for responsibility in experience.responsibilities %}
+            <li>{{ responsibility }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Achievement Section -->
+  <div class="achievement-section">
+    <h2 class="section-title">ACHIEVEMENTS</h2>
+    <div class="achievement-grid">
+      {% for achievement in site.data.achievements %}
+      <div class="achievement-card">
+        <div class="achievement-image">
+          {% if achievement.image contains 'http' %}
+          <a href="{{ achievement.image }}" class="glightbox achievement-lightbox" data-gallery="achievements"
+            data-glightbox="title: {{ achievement.title }}; description: {{ achievement.description }}">
+            <img src="{{ achievement.image }}" alt="{{ achievement.title }}">
+            <div class="achievement-overlay">
+              <i class="fa-solid fa-{{ achievement.icon }}"></i>
+              <span class="zoom-hint">Click to zoom</span>
+            </div>
+          </a>
+          {% else %}
+          <a href="/assets/img/achievements/{{ achievement.image }}" class="glightbox achievement-lightbox"
+            data-gallery="achievements"
+            data-glightbox="title: {{ achievement.title }}; description: {{ achievement.description }}">
+            <img src="/assets/img/achievements/{{ achievement.image }}" alt="{{ achievement.title }}">
+            <div class="achievement-overlay">
+              <i class="fa-solid fa-{{ achievement.icon }}"></i>
+              <span class="zoom-hint">Click to zoom</span>
+            </div>
+          </a>
+          {% endif %}
+        </div>
+        <div class="achievement-content">
+          <span class="achievement-badge {{ achievement.badge_type }}">{{ achievement.badge }}</span>
+          <h3>{{ achievement.title }}</h3>
+          <p class="achievement-issuer">{{ achievement.issuer }} • {{ achievement.year }}</p>
+          <p class="achievement-desc">{{ achievement.description }}</p>
+          <div class="achievement-footer">
+            <span class="achievement-date">
+              <i class="fa-solid fa-calendar"></i> {{ achievement.date }}
+            </span>
+            {% if achievement.verify_link != "" and achievement.verify_link %}
+            <a href="{{ achievement.verify_link }}" class="achievement-link" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-external-link-alt"></i> Verify
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Blog Preview Section -->
+  <div class="blog-preview-section">
+    <h2 class="section-title">LATEST POSTS</h2>
+    <div class="blog-grid">
+      {% for post in site.posts limit:3 %}
+      <article class="blog-card">
+        <time class="blog-date">{{ post.date | date: "%b %-d, %Y" }}</time>
+        <h3>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h3>
+        <p>{{ post.description | truncatewords: 20 }}</p>
+        <div class="tags">
+          {% for tag in post.tags limit:3 %}
+          <a href="/tag/{{ tag }}">#{{ tag }}</a>
+          {% endfor %}
+        </div>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="read-more">
+          Read more
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="/blog" class="cyber-border" style="display: inline-block; padding: 1rem 2rem; border-radius: 4px;">
+        View All Posts
+      </a>
+    </div>
+  </div>
+</section>
