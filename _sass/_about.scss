@@ -31,6 +31,7 @@
   }
   
   & p {
+    text-align: justify;
     font-size: 0.9375rem;
     line-height: 1.8;
     color: var(--text-muted);
@@ -75,7 +76,7 @@
     
     & p {
       font-size: 0.875rem;
-      text-align: left;
+      text-align: justify;
     }
     
     & .greeter-icon {
