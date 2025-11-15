@@ -54,7 +54,7 @@
   description: "Awarded for successfully identifying and reporting security vulnerabilities on the Wonosobo Regency Government website."
   date: "Oct 2025"
   cursor: pointer
-  verify_link: "" 
+  verify_link: ""
 
 - image: "csirt-jogjaprov.jpg"  
   icon: "award"
@@ -67,3 +67,15 @@
   date: "Oct 2025"
   cursor: pointer
   verify_link: "https://sadewa.jogjaprov.go.id/pdf?id=U2FsdGVkX18yBDHLZp1L2u3SrafgWK9RBxWTQe9n7N8PuFgCLtO462TaKKp1L2u3Sr42PIs1JrlG0uYhyep8S8AluBvZQfEvxAe1Q2u3A4le1Q2u3A4l&document_type=targetedtte" 
+
+- image: "csirt-madiun.jpg"  
+  icon: "award"
+  badge: "Achievement"
+  badge_type: "bounty"
+  title: "Certificate of Appreciation - CSIRT Madiun"
+  issuer: "Dinas Komunikasi dan Informatika Kota Madiun"
+  year: "2025"
+  description: "Awarded for discovering and reporting vulnerability on the Madiun City Government's website."
+  date: "Nov 2025"
+  cursor: pointer
+  verify_link: "https://srikandi.arsip.go.id/result-scan/9boATuMSE-l-drd5Ot59jg" 
