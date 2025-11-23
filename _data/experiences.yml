@@ -15,18 +15,17 @@
   description: "Created and designed CTF challenges for the IONIC PENS Competition"
   responsibilities:
     - "Created and designed CTF challenges for the Cybersecurity IoT & Networking Competition (IONIC)"
-    - "Focused on web exploitation challenge categories."
+    - "Contributed to the infrastructure to ensure a stable and secure environment."
   type: "current"
 
-- role: "Web Exploitation Executive"
+- role: "Core Team - Web Exploitation"
   company: "TRI Cybersecurity Community (TCC PENS)"
   location: "Surabaya, Indonesia"
   period: "2024 - Present"
   description: "Leading and mentoring members in web security research and Capture The Flag (CTF) development"
   responsibilities:
-    - "Conducted training sessions and workshops on web exploitation and cybersecurity"
+    - "Conducted sharing sessions, organize community events and workshops on cybersecurity"
     - "Developed and reviewed CTF challenges for internal and external cybersecurity competitions"
-    - "Organize community events and knowledge-sharing sessions"
   type: "current"
 
 - role: "Computer & Network Technician"
@@ -35,9 +34,7 @@
   period: "2021"
   description: "Supported IT infrastructure operations with hands-on experience in system setup, network configuration, troubleshooting, and CCTV implementation."
   responsibilities:
-    - "Built and configured desktop systems, peripherals, and essential workstation components"
-    - "Installed and optimized operating systems, including Local Area Network and wireless network setup"
-    - "Diagnosed and resolved hardware, OS, and connectivity issues to ensure system stability"
-    - "Performed system restoration, data backup, and virus remediation to maintain workstation security"
+    - "Built and configured desktop systems, peripherals, and essential workstation components, and set up both LAN and wireless networks to ensure seamless connectivity"
+    - "Diagnosed and resolved hardware, OS, and connectivity issues and ensured system stability"
     - "Assisted in deploying CCTV cameras and setting up DVR systems for surveillance operations"
   type: "past"

@@ -5,7 +5,7 @@
   title: "CompTIA Pentest+ Certificate"
   issuer: "TryHackMe"
   year: "2025"
-  description: "Just completed CompTIA PenTest+ path from TryHackMe, validating my skills in penetration testing and vulnerability management."
+  description: "Just completed CompTIA PenTest+ path from TryHackMe. Studied various penetration testing methodologies and best practices to identify, exploit, and manage vulnerabilities."
   date: "Oct 2025"
   cursor: pointer
   verify_link: "https://tryhackme.com/certificate/THM-Q5MEOBTOOO"
@@ -54,7 +54,7 @@
   description: "Awarded for successfully identifying and reporting security vulnerabilities on the Wonosobo Regency Government website."
   date: "Oct 2025"
   cursor: pointer
-  verify_link: ""
+  verify_link: "https://drive.google.com/drive/folders/1-VqMxRVa6kK727ybpcFIj83iyQe2ZYg3?usp=sharing"
 
 - image: "csirt-jogjaprov.jpg"  
   icon: "award"
@@ -79,3 +79,27 @@
   date: "Nov 2025"
   cursor: pointer
   verify_link: "https://srikandi.arsip.go.id/result-scan/9boATuMSE-l-drd5Ot59jg" 
+
+- image: "csirt-pontianak.jpg"  
+  icon: "award"
+  badge: "Achievement"
+  badge_type: "bounty"
+  title: "Certificate of Appreciation - CSIRT Pontianak"
+  issuer: "Dinas Komunikasi dan Informatika Kota Pontianak"
+  year: "2025"
+  description: "Awarded for discovering and reporting vulnerability on the Pontianak City Government's website."
+  date: "Nov 2025"
+  cursor: pointer
+  verify_link: "https://drive.google.com/file/d/1SV-Vm6DFjxx2Wz1VGCNSUc9vDY7JPWj0/view?usp=sharing" 
+
+- image: "ttis-kukarkab.jpg"  
+  icon: "award"
+  badge: "Achievement"
+  badge_type: "bounty"
+  title: "Certificate of Appreciation - TTIS Kukar"
+  issuer: "Dinas Komunikasi dan Informatika Kabupaten Kutai Kartanegara"
+  year: "2025"
+  description: "Awarded for discovering and reporting vulnerability on the Kutai Kartanegara Government's website."
+  date: "Nov 2025"
+  cursor: pointer
+  verify_link: "https://ttis.kukarkab.go.id/whitehat-etam?page=5" 
