@@ -103,3 +103,15 @@
   date: "Nov 2025"
   cursor: pointer
   verify_link: "https://ttis.kukarkab.go.id/whitehat-etam?page=5" 
+
+- image: "csirt-cimahi.jpg"  
+  icon: "award"
+  badge: "Achievement"
+  badge_type: "bounty"
+  title: "Certificate of Appreciation - CSIRT Cimahi"
+  issuer: "Dinas Komunikasi dan Informatika Kota Cimahi"
+  year: "2025"
+  description: "Recognized for identifying and responsibly disclosing a newly discovered security vulnerability on the Cimahi City Government’s systems."
+  date: "Nov 2025"
+  cursor: pointer
+  verify_link: "https://drive.google.com/file/d/1AmQ8EJsVCe3_0keQA__4I-doRN8qIomv/view?usp=sharing" 
