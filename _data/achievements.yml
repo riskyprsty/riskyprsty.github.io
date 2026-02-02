@@ -115,3 +115,15 @@
   date: "Nov 2025"
   cursor: pointer
   verify_link: "https://drive.google.com/file/d/1AmQ8EJsVCe3_0keQA__4I-doRN8qIomv/view?usp=sharing" 
+
+- image: "bali-bug-bounty.jpg"  
+  icon: "award"
+  badge: "Achievement"
+  badge_type: "bounty"
+  title: "Certificate Bali Bug Bounty"
+  issuer: "Pemerintah Provinsi Bali"
+  year: "2025"
+  description: "Recognized for identifying and responsibly disclosing a Remote Code Execution vulnerability on the Bali Government’s systems."
+  date: "Dec 2025"
+  cursor: pointer
+  verify_link: "https://drive.google.com/file/d/1sQTmdYsVIu5o8khcUPaExM0HwCA-iR2m/view?usp=sharing" 
